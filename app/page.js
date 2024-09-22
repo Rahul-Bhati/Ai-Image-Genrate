@@ -1,9 +1,10 @@
 import Image from "next/image";
 import Create from "./create/page";
+import { Linkedin, Github, Twitter } from 'lucide-react';
 
 export default function Home() {
   return (
-    <main className="sm:mx-20">
+    <main className="sm:mx-20 flex flex-col min-h-screen">
       <nav className="flex justify-center py-5">
         <div className="logo"><h1 className="font-bold text-3xl font-[Sansita Swashed]">Creat<span className="text-orange-400">i</span></h1></div>
         {/* <div className="flex items-center justify-center">
@@ -32,6 +33,28 @@ export default function Home() {
           </div>
         </div>
       </header> */}
+
+      <footer class="flex justify-center items-center flex-col gap-3 mt-auto mb-3">
+        <div class="flex justify-center items-center flex-col gap-2">
+          <h1>Rahul Bhati</h1>
+          <ul class="flex justify-center gap-5">
+            <li><a href="https://www.linkedin.com/in/rahul-bhati-25482a1a0/" target="_blank"><Linkedin /></a></li>
+            <li><a href="https://github.com/rahul-Bhati/" target="_blank"><Github /></a></li>
+            <li><a href="https://x.com/RahulBh77113306" target="_blank"><Twitter /></a></li>
+          </ul>
+        </div>
+      </footer>
+
+      {/* <footer className="items-end">
+        <div className="flex justify-center items-center flex-col gap-5">
+          <h1>Rahul Bhati</h1>
+          <ul className="flex justify-center gap-5">
+            <li><a href="https://www.linkedin.com/in/rahul-bhati-25482a1a0/" target="_blank"><Linkedin /></a></li>
+            <li><a href="https://github.com/rahul-Bhati/" target="_blank"><Github /></a></li>
+            <li><a href="https://x.com/RahulBh77113306" target="_blank"><Twitter /></a></li>
+          </ul>
+        </div>
+      </footer> */}
     </main>
   );
 }
